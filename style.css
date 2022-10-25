@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Anek+Telugu:wght@200;300;400&family=Edu+NSW+ACT+Foundation:wght@500&family=Edu+VIC+WA+NT+Beginner&family=Hubballi&family=Inter:wght@300&family=Noto+Sans+Balinese:wght@500&family=Noto+Sans+Buhid&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgba(238, 238, 238);
+  font-family: "Noto Sans Balinese", sans-serif;
+}
+h1,
+h2 {
+  filter: drop-shadow(15px 5px 2px grey);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: white;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+.buttons_header button {
+  padding: 10px;
+  font-size: 15px;
+  font-family: "Noto Sans Balinese", sans-serif;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+.new_card {
+  margin-right: 30px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.create-card {
+  display: none;
+}
+.create-card.active {
+  display: block;
+  display: flex;
+  background-color: rgba(238, 238, 238);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  width: 300px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.create-card h2,
+.create-card .buttons_main {
+  padding: 20px;
+}
+
+.buttons_main button {
+  padding: 10px;
+  margin: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  border: none;
+  cursor: pointer;
+  font-family: "Noto Sans Balinese", sans-serif;
+  border-radius: 7px;
+}
+
+.card {
+  width: 350px;
+  height: 200px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  background: white;
+  margin: 50px;
+  border-radius: 10px;
+}
+.card.active {
+  display: none;
+}
+.card .answer {
+  text-align: center;
+  margin-top: 50px;
+  cursor: pointer;
+}
+.card .answer.active {
+  display: block;
+}
+.card .question {
+  margin-top: 20px;
+  margin-left: 30px;
+}
+.cards {
+  display: inline-flex;
+  justify-content: left;
+  flex-wrap: wrap;
+}
+
+textarea {
+  padding: 10px;
+  border: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
